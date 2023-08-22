@@ -8,10 +8,10 @@ public class GettingMoney extends CreditCard {
         Scanner scanner = new Scanner(System.in);
         int moneyGetter = scanner.nextInt();
         if (currAccBalance > moneyGetter){
-        this.currAccBalance = currAccBalance - moneyGetter;
-        System.out.println("Your current balance is: " + currAccBalance);
+            this.currAccBalance = currAccBalance - moneyGetter;
+            System.out.println("Your current balance is: " + currAccBalance);
 
-    } else {
+        } else {
             System.out.println("Sorry, you don't have that much");
         }
 
@@ -19,4 +19,4 @@ public class GettingMoney extends CreditCard {
 
 
 
-    }
+}
