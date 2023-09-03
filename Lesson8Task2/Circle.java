@@ -1,15 +1,27 @@
-package Lesson8Task2;
+package Lesson8Task2; 
 
-public class Circle extends Shape{
-    int circleRadius;
-    double circleSquare(){
-        double circleSquare = Math.PI * (circleRadius^2);
-        System.out.println("The circle square is " + circleSquare);
-        return circleSquare;
+public class Circle implements Shape {
+    private int circleRadius;
+
+    public Circle(int circleRadius) {
+        this.circleRadius = circleRadius;
     }
-    double circlePerimeter(){
-        double circlePerimeter = 2 * Math.PI * circleRadius;
-        System.out.println("The circle perimeter is " + circlePerimeter);
-        return circlePerimeter;
+
+    public int getCircleRadius() {
+        return circleRadius;
+    }
+
+    public void setCircleRadius(int circleRadius) {
+        this.circleRadius = circleRadius;
+    }
+
+    @Override
+    public double perimeter() {
+        return 2 * Math.PI * circleRadius;
+    }
+
+    @Override
+    public double square() {
+        return (int) (Math.PI * (circleRadius ^ 2));
     }
 }

@@ -1,5 +1,8 @@
 package Lesson8Task2;
 
-public class Shape {
+public interface Shape {
+    double perimeter();
+    double square();
+
 
 }

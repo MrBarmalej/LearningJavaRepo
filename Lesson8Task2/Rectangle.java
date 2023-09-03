@@ -2,19 +2,22 @@ package Lesson8Task2;
 
 import java.util.Scanner;
 
-class Rectangle extends Shape{
-    int recHeight;
-    int recWidth;
+class Rectangle implements Shape{
+    private int height;
+    private int width;
 
-
-    int recSqare(){
-        int recSquare = recHeight * recWidth;
-        System.out.println("The rectangle square is " + recSquare);
-        return recSquare;
+    public Rectangle(int height, int width) {
+        this.height = height;
+        this.width = width;
     }
-    int recPerimeter(){
-        int recPerimeter = 2 * (recHeight + recWidth);
-        System.out.println("The rectangle perimeter is " + recPerimeter);
-        return recPerimeter;
+
+    @Override
+    public double perimeter() {
+        return 2 * (height + width);
+    }
+
+    @Override
+    public double square() {
+        return height * width;
     }
 }
