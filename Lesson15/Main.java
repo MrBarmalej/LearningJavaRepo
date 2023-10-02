@@ -15,14 +15,13 @@ public class Main {
         System.out.println("Enter your birth date formatted as yyyy-MM-dd");
         /*Пользователь вводит в консоль дату своего рождения. Программа должна вернуть дату,
         когда пользователю исполнится 100 лет. Использовать Date/Time API.*/
-        /*
+
         String birthDate = scanner.nextLine();
         LocalDate userBirthDate = LocalDate.parse(birthDate);
         LocalDate userOld = userBirthDate.plusYears(100);
-        System.out.println("User will be 100 years old on " + userOld)
+        System.out.println("User will be 100 years old on " + userOld);
 
         //Используя Predicate среди массива чисел вывести только те, которые являются положительными.
-        List<Integer> nums= Arrays.asList(-1,2,4,-6,8,9,-44,55,-77,66,-18,0);
         int [] arr = {-1,2,4,-6,8,9,-44,55,-77,66,-18,0};
         Predicate<Integer> isPos = i -> i >= 0;
         for (int i = 0; i < arr.length; i++){
@@ -30,8 +29,6 @@ public class Main {
                 System.out.println(arr[i]);
             }
         }
-
-         */
         /*Используя Function реализовать лямбду, которая будет принимать в себя строку в
         формате “*сумма* BYN”(через пробел, вместо *сумма* вставить любое значение), а
         возвращать сумму, переведенную сразу в доллары.*/
