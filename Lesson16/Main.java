@@ -2,8 +2,6 @@ package Lesson16;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.stream.Collectors;
-import java.util.stream.Stream;
 
 public class Main {
     /*Создать коллекцию класса ArrayList наполнить ее элементами типа Integer. С помощью
