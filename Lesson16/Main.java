@@ -19,12 +19,14 @@ public class Main {
         list.add(2);
         list.add(8);
         list.add(5);
-        int sum;
-        list.stream()
+        int sum = list.stream()
                 .distinct()
                 .filter(p -> p%2 == 0)
-                .forEach(System.out::println)
+                .mapToInt(Integer::intValue)
+                .sum()
+
                 ;
+        System.out.println(sum);
 
 
     }
